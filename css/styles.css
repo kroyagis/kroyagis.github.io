@@ -6,8 +6,10 @@ BASE STYLES
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75%;
+  color: #4A4A4A;
   line-height: 1.5;
   margin: 0;
+  text-align: center;
 }
 
 h1,
@@ -16,6 +18,11 @@ h3 {
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+  color: #4A4A4A;
 }
 
 /***
@@ -28,7 +35,7 @@ header{
 }
 
 .nav-bar{
-  background-color: tomato;
+  background-color: white;
   text-align: center;
   height: 100%;
 }
@@ -69,6 +76,7 @@ body{
   height: 100%;
 }
 .canvas{
+  position: relative;
   height: 80%;
 }
 .project-set{
@@ -105,3 +113,113 @@ body{
   top: 70%;
   right: 10%;
 }
+
+/***
+
+STYLING THE ROBOT
+
+***/
+.avatar{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+.cap{
+  margin: 0 auto;
+  margin-bottom: 2px;
+  width: 73.07px;
+  height: 59.73px;
+  background: #E9E9E9;
+  border-top-left-radius: 38.4px;
+  border-top-right-radius: 38.4px;
+}
+.upperhead{
+  margin: 0 auto;
+  width: 210.13px;
+  height: 63.735px;
+  background: #E9E9E9;
+  border-top-left-radius: 51.73px;
+  border-top-right-radius: 51.73px;
+}
+
+
+.lowerhead{
+  position: relative;
+}
+.lowerface{
+  position: relative;
+  margin: 0 auto;
+  width: 250.13px;
+  height: 63.735px;
+  background: #E9E9E9;
+}
+.mask{
+  position: absolute;
+  background: white;
+  width: 20px;
+  height: 63.735px;
+}
+
+.left{
+  left: 0;
+  border-bottom-right-radius: 51.73px;
+}
+.right{
+  right: 0;
+  border-bottom-left-radius: 51.73px;
+}
+.lower-part{
+
+
+}
+/*
+
+
+.avatar{
+
+
+}
+
+.cap{
+  width: 73.07px;
+  height: 59.73px;
+  color: tomato;
+}
+.head{
+
+}
+
+.upperface{
+  width: 210.13px;
+  height: 63.735px;
+  background: #E9E9E9;
+  border-top-left-radius: 51.73px;
+  border-top-right-radius: 51.73px;
+}
+.lower-face-container{
+
+
+
+}
+
+.lower-part{
+
+}
+
+.lowerface{
+  width: 230.13px;
+  height: 63.735px;
+  background: #E9E9E9;
+}
+.mask{
+  background: white;
+  width: 20px;
+  height: 63.735px;
+  border-bottom-left-radius: 51.73px;
+  border-bottom-right-radius: 51.73px;
+}
+*/
