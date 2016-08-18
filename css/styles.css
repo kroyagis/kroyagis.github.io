@@ -23,10 +23,14 @@ h3 {
 STYLING THE NAV
 
 ***/
+header{
+  height: 20%;
+}
 
 .nav-bar{
   background-color: tomato;
   text-align: center;
+  height: 100%;
 }
 
 .title{
@@ -64,23 +68,40 @@ body{
 .container{
   height: 100%;
 }
+.canvas{
+  height: 80%;
+}
+.project-set{
+  position: relative;
+  height: 100%;
+}
 
-.projects{
+.project{
   display: inline;
+  position: absolute;
+  font-size: 1.92em;
 }
 
-#soom{
+.soom{
   color: #BB7D17;
+  top: 30%;
+  left: 23%;
 }
 
-#newmedia{
+.newmedia{
   color: #3A793E;
+  left: 10%;
+  top: 55%;
 }
 
-#seatyourself{
+.seatyourself{
   color: #C64C5B;
+  top: 40%;
+  right: 23%;
 }
 
-#crowdfunder{
+.crowdfunder{
   color: #5E94CF;
+  top: 70%;
+  right: 10%;
 }
