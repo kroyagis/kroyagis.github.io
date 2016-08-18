@@ -4,3 +4,23 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
+.nav-bar{
+  overflow: auto;
+  background-color: tomato;
+  height: 120px;
+}
+
+.title{
+  margin: 0;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item{
+  display: inline-block;
+
+}
