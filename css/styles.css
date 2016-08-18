@@ -119,6 +119,7 @@ body{
 STYLING THE ROBOT
 
 ***/
+
 .avatar{
   position: absolute;
   bottom: 0;
@@ -128,6 +129,7 @@ STYLING THE ROBOT
   right: 0;
 
 }
+
 .cap{
   margin: 0 auto;
   margin-bottom: 2px;
@@ -137,7 +139,9 @@ STYLING THE ROBOT
   border-top-left-radius: 38.4px;
   border-top-right-radius: 38.4px;
 }
+
 .upperhead{
+  position: relative;
   margin: 0 auto;
   width: 210.13px;
   height: 63.735px;
@@ -146,10 +150,10 @@ STYLING THE ROBOT
   border-top-right-radius: 51.73px;
 }
 
-
 .lowerhead{
   position: relative;
 }
+
 .lowerface{
   position: relative;
   margin: 0 auto;
@@ -157,6 +161,7 @@ STYLING THE ROBOT
   height: 63.735px;
   background: #E9E9E9;
 }
+
 .mask{
   position: absolute;
   background: white;
@@ -172,54 +177,26 @@ STYLING THE ROBOT
   right: 0;
   border-bottom-left-radius: 51.73px;
 }
-.lower-part{
 
-
-}
-/*
-
-
-.avatar{
-
-
-}
-
-.cap{
-  width: 73.07px;
-  height: 59.73px;
-  color: tomato;
-}
-.head{
-
-}
-
-.upperface{
-  width: 210.13px;
-  height: 63.735px;
-  background: #E9E9E9;
-  border-top-left-radius: 51.73px;
-  border-top-right-radius: 51.73px;
-}
-.lower-face-container{
-
-
-
-}
-
-.lower-part{
-
-}
-
-.lowerface{
-  width: 230.13px;
-  height: 63.735px;
-  background: #E9E9E9;
-}
-.mask{
+.eyes{
+  position: absolute;
+  bottom: 0;
+  width: 36.32px;
+  height: 36.32px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 4.8px;
+  border-color: #7D99A6;
   background: white;
-  width: 20px;
-  height: 63.735px;
-  border-bottom-left-radius: 51.73px;
-  border-bottom-right-radius: 51.73px;
 }
-*/
+
+.eyeleft{
+  right: 22px;
+}
+.eyeright{
+  left: 22px;
+}
+
+.pupils{
+  
+}
