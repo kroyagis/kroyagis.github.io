@@ -198,5 +198,47 @@ STYLING THE ROBOT
 }
 
 .pupils{
-  
+  position: absolute;
+  top: 0;
+  width: 21.98px;
+  height: 21.98px;
+  border-radius: 50px;
+  background: #7D99A6;
 }
+
+.mouth{
+  position: relative;
+  border: 0;
+  width: 110.93px;
+  height: 28.27px;
+  border-style: solid;
+  border-width: 4.8px;
+  border-color: #7D99A6;
+  margin-left: auto;
+  margin-right: auto;
+  top: 2px;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.teeth{
+  position: absolute;
+  width: 18.24px;
+  height: 29px;
+  background: white;
+  border-style: solid;
+  border-top: 4.8px;
+  border-bottom: 4.8px;
+  border-width: 4.8px;
+  border-color: #7D99A6;
+}
+.tooth1{
+  left: 18.24px;
+}
+.tooth2{
+  left: 65.72px;
+}
+/*.tooth3{
+  left: 60px;
+}*/
