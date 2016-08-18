@@ -1,3 +1,8 @@
+/***
+
+BASE STYLES
+
+***/
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75%;
@@ -13,6 +18,11 @@ h3 {
   font-weight: 500;
 }
 
+/***
+
+STYLING THE NAV
+
+***/
 
 .nav-bar{
   background-color: tomato;
@@ -37,4 +47,40 @@ h3 {
 
 .nav-item{
   display: inline-block;
+}
+
+
+/***
+
+STYLING THE LAYOUT
+
+***/
+
+html,
+body{
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+}
+
+.projects{
+  display: inline;
+}
+
+#soom{
+  color: #BB7D17;
+}
+
+#newmedia{
+  color: #3A793E;
+}
+
+#seatyourself{
+  color: #C64C5B;
+}
+
+#crowdfunder{
+  color: #5E94CF;
 }
