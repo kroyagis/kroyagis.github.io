@@ -31,7 +31,7 @@ STYLING THE NAV
 
 ***/
 header{
-  height: 20%;
+  height: 25%;
 }
 
 .nav-bar{
@@ -42,6 +42,7 @@ header{
 
 .title{
   margin: 0;
+  padding: 20px 0 10px;
   font-size: 5.547em;
 }
 
@@ -52,14 +53,20 @@ header{
 
 .nav-list{
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   font-size: 1.067em;
 }
 
 .nav-item{
+  padding: 0 20px;
   display: inline-block;
 }
-
+.nav1,
+.nav2,
+.nav3{
+  border-right: solid #4A4A4A;
+  border-right-width: 1px;
+}
 
 /***
 
@@ -77,7 +84,7 @@ body{
 }
 .canvas{
   position: relative;
-  height: 80%;
+  height: 75%;
 }
 .project-set{
   position: relative;
