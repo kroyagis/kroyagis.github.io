@@ -96,8 +96,6 @@ function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top
     eye1Obj.style.top = e1yLoc+r1/1.5+"px";    // "16.3em";
     eye2Obj.style.left = e2xLoc+"px";        // "21.0em";
     eye2Obj.style.top = e2yLoc+r2/1.5+"px";    // "16.3em";
-
-    console.log("Eyes have been initialized");
   }, 250);
 
   var moveEyes = throttle(function(e){
@@ -135,7 +133,6 @@ function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top
     y = (R < r2)? dy : dy*r2/R;
     eye2Obj.style.left = x + e2xLoc + "px";
     eye2Obj.style.top = y + e2yLoc + "px";
-    console.log(e.pageX, e.pageY);
   });
 
   eyesInit();
@@ -143,5 +140,4 @@ function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top
   addEvent(window, "resize", eyesInit);
   // setup handler for cursor move
   addEvent(document, "mousemove", moveEyes);
-  // for debug use     document.onclick = moveEyes;
 }
