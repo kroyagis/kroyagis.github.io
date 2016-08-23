@@ -205,7 +205,8 @@ STYLING THE ROBOT
   left: 22px;
 }
 .eyes{
-  position: absolute;
+  margin: 0;
+  position: relative;
   width: 36.32px;
   height: 36.32px;
   border-radius: 50px;

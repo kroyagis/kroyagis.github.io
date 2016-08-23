@@ -55,7 +55,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
           <div class="lowerhead">
             <div class="lower-part lowerface">
@@ -82,6 +82,52 @@
       </div>
 
     </div>
+    <script type="text/javascript">
+    if (typeof addLoadEvent === "undefined")
+    {
+      var addLoadEvent = function(func)
+      {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function')
+        {
+          window.onload = func;
+        }
+        else
+        {
+          window.onload = function(){oldonload();	func();}
+        }
+      }
+    }
+    if (typeof addEvent === "undefined")
+    {
+      var addEvent = function(element, eventType, handler)
+      {
+        if (element.attachEvent)
+        {
+          return element.attachEvent('on'+eventType, handler);
+        }
+        return element.addEventListener(eventType, handler, false);
+      };
+    }
+    </script>
     <script type="text/javascript" src="javascript/jiyou.js"></script>
+    <script type="text/javascript">
+      function initEyes(){
+        var e1Lft = 8;   // %width to center wrt face top left  166/400=41.50
+        var e1Top = 28;   // %height      ''         ''          212/622=34.08
+        var e2Lft = 8;   //                                     279/400=69.25
+        var e2Top = 28;   //                                     213/622=34.24
+        var e1Radius = 4.5;  // %width of face
+        var e2Radius = 4.5;
+        // Xeyes(faceId, e1Id, e1Lft, e1Top, e1Radius, e2Id, e2Lft, e2Top, e2Radius);
+        Xeyes(".upperhead", ".pupilleft", e1Lft, e1Top, e1Radius, ".pupilright", e2Lft, e2Top, e2Radius);
+      }
+    </script>
+    <script type="text/javascript">
+      addLoadEvent( function(){
+        initEyes();
+      });
+    </script>
+
   </body>
 </html>
