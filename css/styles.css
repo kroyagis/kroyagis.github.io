@@ -190,26 +190,36 @@ STYLING THE ROBOT
   right: 0;
   border-bottom-left-radius: 51.73px;
 }
-
-.eyes{
+.brows{
   position: absolute;
   bottom: 0;
+  width: 44.32px;
+  height: 44.32px;
+  border-radius: 50px;
+  background:#7D99A6;
+}
+.browleft{
+  right: 22px;
+}
+.browright{
+  left: 22px;
+}
+.eyes{
+  position: absolute;
   width: 36.32px;
   height: 36.32px;
   border-radius: 50px;
-  border-style: solid;
-  border-width: 4.8px;
-  border-color: #7D99A6;
   background: white;
 }
 
 .eyeleft{
-  right: 22px;
+  left: 4px;
+  top: 4px;
 }
 .eyeright{
-  left: 22px;
+  left: 4px;
+  top: 4px;
 }
-
 .pupils{
   position: absolute;
   top: 0;
