@@ -7,9 +7,6 @@
   </head>
   <body>
     <div class="canvas">
-
-
-
       <header>
         <nav class="nav-bar">
           <h1 class="title">JI YOU</h1>
@@ -23,7 +20,6 @@
         </nav>
       </header>
       <div class="container">
-
         <div class="avatar">
           <div class="cap">
 
@@ -82,37 +78,37 @@
               <a href="https://github.com/Courtney2511/crowdfunder">CrowdFunder<h5>Funding Platform</h5></a>
           </div>
         </div>
-      <!-- </div> -->
       <script type="text/javascript">
-
-      if (typeof addLoadEvent === "undefined")
-      {
-        var addLoadEvent = function(func)
+        if (typeof addLoadEvent === "undefined")
         {
-          var oldonload = window.onload;
-          if (typeof window.onload != 'function')
+          var addLoadEvent = function(func)
           {
-            window.onload = func;
-          }
-          else
-          {
-            window.onload = function(){oldonload();	func();}
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function')
+            {
+              window.onload = func;
+            }
+            else
+            {
+              window.onload = function(){oldonload();	func();}
+            }
           }
         }
-      }
-      if (typeof addEvent === "undefined")
-      {
-        var addEvent = function(element, eventType, handler)
+        if (typeof addEvent === "undefined")
         {
-          if (element.attachEvent)
+          var addEvent = function(element, eventType, handler)
           {
-            return element.attachEvent('on'+eventType, handler);
-          }
-          return element.addEventListener(eventType, handler, false);
-        };
-      }
+            if (element.attachEvent)
+            {
+              return element.attachEvent('on'+eventType, handler);
+            }
+            return element.addEventListener(eventType, handler, false);
+          };
+        }
       </script>
-      <script type="text/javascript" src="javascript/jiyou.js"></script>
+      <script type="text/javascript" src="javascript/crosseyes.js"></script>
+      <script type="text/javascript" src="javascript/animate.js"></script>
+
       <script type="text/javascript">
         function initEyes(){
           var e1Lft = 8;   // %width to center wrt face top left
