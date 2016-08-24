@@ -191,6 +191,7 @@ STYLING THE ROBOT
   background: #E9E9E9;
   border-top-left-radius: 38.4px;
   border-top-right-radius: 38.4px;
+  /*transition: all 0.1s ease-in-out;*/
 }
 
 .upperhead{
@@ -203,9 +204,10 @@ STYLING THE ROBOT
   border-top-right-radius: 51.73px;
 }
 
-/*.lowerhead{
+.lowerhead{
   position: relative;
-}*/
+  z-index: -1;
+}
 
 .lowerface{
   position: relative;
@@ -251,6 +253,8 @@ STYLING THE ROBOT
   height: 36.32px;
   border-radius: 50px;
   background: white;
+  /*transition: all 0.1s ease-in-out; */
+
 }
 
 .eyeleft{
