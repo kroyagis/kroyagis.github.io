@@ -156,7 +156,6 @@ var crowdfunder = document.querySelector(".crowdfunder");
 
 var capLight = function(e){
   cap.style.transition = "";
-  cap.style.boxShadow = "0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px " + getComputedStyle(e).color;
   cap.style.background = getComputedStyle(e).borderColor
 }
 
