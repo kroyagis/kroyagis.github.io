@@ -6,11 +6,14 @@
     <title>Ji You</title>
   </head>
   <body>
-    <div class="container" >
+    <div class="canvas">
+
+
+
       <header>
         <nav class="nav-bar">
           <h1 class="title">JI YOU</h1>
-          <h3 class="title-about">I’m a full-stack web developer who loves to explore and develop creative ideas.</h3>
+          <h3 class="title-about">I’m a full-stack web developer.</h3>
           <ul class="nav-list">
             <li class="nav-item nav1"><a href="http://github.com/kroyagis">GitHub</a></li>
             <li class="nav-item nav2"><a href="http://linkedin.com/in/jwyou">LinkedIn</a></li>
@@ -19,21 +22,8 @@
           </ul>
         </nav>
       </header>
-      <div class="canvas">
-        <div class="project-set">
-          <div class="project soom">
-            <a href="https://github.com/Courtney2511/startswithme">State Of Our Mind</a>
-          </div>
-          <div class="project newmedia">
-            <a href="http://www.jiyou.ca">New Media</a>
-          </div>
-          <div class="project seatyourself">
-            <a href="https://github.com/kroyagis/seatyourself">SeatYourself</a>
-          </div>
-          <div class="project crowdfunder">
-            <a href="https://github.com/Courtney2511/crowdfunder">CrowdFunder</a>
-          </div>
-        </div>
+      <div class="container">
+
         <div class="avatar">
           <div class="cap">
 
@@ -79,55 +69,76 @@
 
           </div>
         </div>
-      </div>
+        <!-- <div class="project-set"> -->
+          <div class="project soom">
+            <span>
+              <a href="https://github.com/Courtney2511/startswithme">State Of Our Mind</a>
+            </span>
+          </div>
+          <div class="project newmedia">
+            <span>
+              <a href="http://www.jiyou.ca">New Media</a>
+            </span>
+          </div>
+          <div class="project seatyourself">
+            <span>
+              <a href="https://github.com/kroyagis/seatyourself">SeatYourself</a>
+            </span>
+          </div>
+          <div class="project crowdfunder">
+            <span>
+              <a href="https://github.com/Courtney2511/crowdfunder">CrowdFunder</a>
+            </span>
+          </div>
+        </div>
+      <!-- </div> -->
+      <script type="text/javascript">
 
+      if (typeof addLoadEvent === "undefined")
+      {
+        var addLoadEvent = function(func)
+        {
+          var oldonload = window.onload;
+          if (typeof window.onload != 'function')
+          {
+            window.onload = func;
+          }
+          else
+          {
+            window.onload = function(){oldonload();	func();}
+          }
+        }
+      }
+      if (typeof addEvent === "undefined")
+      {
+        var addEvent = function(element, eventType, handler)
+        {
+          if (element.attachEvent)
+          {
+            return element.attachEvent('on'+eventType, handler);
+          }
+          return element.addEventListener(eventType, handler, false);
+        };
+      }
+      </script>
+      <script type="text/javascript" src="javascript/jiyou.js"></script>
+      <script type="text/javascript">
+        function initEyes(){
+          var e1Lft = 8;   // %width to center wrt face top left
+          var e1Top = 28;   // %height      ''         ''
+          var e2Lft = 8;   //
+          var e2Top = 28;   //
+          var e1Radius = 4.5;  // %width of face
+          var e2Radius = 4.5;
+          // Xeyes(faceId, e1Id, e1Lft, e1Top, e1Radius, e2Id, e2Lft, e2Top, e2Radius);
+          Xeyes(".upperhead", ".pupilleft", e1Lft, e1Top, e1Radius, ".pupilright", e2Lft, e2Top, e2Radius);
+        }
+      </script>
+      <script type="text/javascript">
+        addLoadEvent( function(){
+          initEyes();
+        });
+      </script>
     </div>
-    <script type="text/javascript">
-    if (typeof addLoadEvent === "undefined")
-    {
-      var addLoadEvent = function(func)
-      {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function')
-        {
-          window.onload = func;
-        }
-        else
-        {
-          window.onload = function(){oldonload();	func();}
-        }
-      }
-    }
-    if (typeof addEvent === "undefined")
-    {
-      var addEvent = function(element, eventType, handler)
-      {
-        if (element.attachEvent)
-        {
-          return element.attachEvent('on'+eventType, handler);
-        }
-        return element.addEventListener(eventType, handler, false);
-      };
-    }
-    </script>
-    <script type="text/javascript" src="javascript/jiyou.js"></script>
-    <script type="text/javascript">
-      function initEyes(){
-        var e1Lft = 8;   // %width to center wrt face top left
-        var e1Top = 28;   // %height      ''         ''
-        var e2Lft = 8;   //
-        var e2Top = 28;   //
-        var e1Radius = 4.5;  // %width of face
-        var e2Radius = 4.5;
-        // Xeyes(faceId, e1Id, e1Lft, e1Top, e1Radius, e2Id, e2Lft, e2Top, e2Radius);
-        Xeyes(".upperhead", ".pupilleft", e1Lft, e1Top, e1Radius, ".pupilright", e2Lft, e2Top, e2Radius);
-      }
-    </script>
-    <script type="text/javascript">
-      addLoadEvent( function(){
-        initEyes();
-      });
-    </script>
-
   </body>
 </html>

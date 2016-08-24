@@ -1,5 +1,5 @@
 function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 100);
+  threshhold || (threshhold = 51);
   var last,
       deferTimer;
   return function () {
