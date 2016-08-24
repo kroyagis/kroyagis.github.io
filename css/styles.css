@@ -41,6 +41,20 @@ h3
   letter-spacing: 2px;
 }
 
+h5
+{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 0.6em;
+  font-variant: normal;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  color: #999999;
+  text-transform: none;
+  line-height: 1.1em;
+
+}
+
 a
 {
   color: inherit;
@@ -89,6 +103,10 @@ header{
   padding: 0 1.2em;
   display: inline-block;
 }
+
+.nav-list a:hover{
+  color: #999999;
+}
 .nav1,
 .nav2,
 .nav3{
@@ -135,6 +153,7 @@ body{
 .project a{
   display: inline-block;
   padding: 0 20px;
+  height: 65px;
 }
 
 .soom{
@@ -142,14 +161,26 @@ body{
   border-color: #823DBF;
   top: 45%;
   left: 25%;
+  transition: all 0.1s ease-in-out;
+
 }
 
+.soom:hover {
+  background:#823DBF;
+  color: white;
+}
 
 .newmedia{
   color: #DD4FAB;
   border-color: #DD4FAB;
   left: 10%;
   top: 70%;
+  transition: all 0.1s ease-in-out;
+}
+
+.newmedia:hover{
+  background: #DD4FAB;
+  color: white;
 }
 
 .seatyourself{
@@ -157,13 +188,23 @@ body{
   border-color: #0F8D80;
   top: 55%;
   right: 20%;
+  transition: all 0.1s ease-in-out;
 }
 
+.seatyourself:hover{
+  background: #0F8D80;
+  color: white;
+}
 .crowdfunder{
   color: #3764C5;
   border-color: #3764C5;
   top: 80%;
   right: 10%;
+  transition: all 0.1s ease-in-out;
+}
+.crowdfunder:hover{
+  background: #3764C5;
+  color: white;
 }
 
 /***

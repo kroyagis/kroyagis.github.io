@@ -157,7 +157,7 @@ var crowdfunder = document.querySelector(".crowdfunder");
 var capLight = function(e){
   cap.style.transition = "";
   cap.style.boxShadow = "0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px " + getComputedStyle(e).color;
-  cap.style.background = getComputedStyle(e).color
+  cap.style.background = getComputedStyle(e).borderColor
 }
 
 
@@ -170,11 +170,11 @@ var eyeBeamOn = function(){
 }
 
 var lightsOff = function(){
-  cap.style.transition = "all 0.3s ease-in-out";
+  cap.style.transition = "all 0.2s ease-in-out";
   cap.style.boxShadow = "";
   cap.style.background = '#E9E9E9';
   for (var j = 0; j < eyes.length; j++){
-    eyes[j].style.transition = "all 0.2s ease-in-out";
+    eyes[j].style.transition = "all 0.1s ease-in-out";
     pupils[j].style.display = "block";
     eyes[j].style.background = "white";
     eyes[j].style.boxShadow = "";
