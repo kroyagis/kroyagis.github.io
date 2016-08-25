@@ -92,9 +92,9 @@ function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top
     r1 = 0.01*e1Radius*faceWidth;
     r2 = 0.01*e2Radius*faceWidth;
     // now move the eyes to a less goggle-eye position until mouse moves
-    eye1Obj.style.left = e1xLoc+"px";        // "12.4em";
+    eye1Obj.style.left = e1xLoc + 2 +"px";        // "12.4em";
     eye1Obj.style.top = e1yLoc + "px";    // "16.3em";
-    eye2Obj.style.left = e2xLoc + "px";        // "21.0em";
+    eye2Obj.style.left = e2xLoc + 2 + "px";        // "21.0em";
     eye2Obj.style.top = e2yLoc + "px";    // "16.3em";
   }, 250);
 
