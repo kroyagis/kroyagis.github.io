@@ -344,24 +344,11 @@ PROJECT LINKS
   color: white;
 }
 
-/*@media screen and (max-width: 1000px) {
-  .crowdfunder{
-    right: 5%;
-    top: 70%;
-  }
-  .seatyourself{
-    right: 15%;
-    top: 50%;
-  }
-  .soom{
-    left: 20%;
-    top: 35%;
-  }
-  .newmedia{
-    left: 5%;
-    top: 70%;
-  }
-}*/
+/*
+
+RESPONSIVE DESIGN
+
+*/
 
 @media (max-width: 660px)
 {
@@ -391,12 +378,10 @@ PROJECT LINKS
 }
 
 @media (min-width: 661px){
-
   .project{
     display: inline;
     position: absolute;
   }
-
 
   .crowdfunder{
     right: 5%;
