@@ -32,7 +32,7 @@ var eyeBeamOn = function(){
 
 /* Back to default function */
 var lightsOff = function(){
-  cap.style.transition = "all 0.2s ease-in-out";
+  cap.style.transition = "all 0.1s ease-in-out";
   cap.style.boxShadow = "";
   cap.style.background = '#E9E9E9';
   for (var j = 0; j < eyes.length; j++){
@@ -45,15 +45,20 @@ var lightsOff = function(){
 
 /* mouseover event on project links */
 for (var i = 0; i < projects.length; i++){
+
   projects[i].onmouseover = function(e){
+    this.style.transition = "";
     capLight(this);
     eyeBeamOn();
   }
+
 }
 
 /* mouseout event on project links */
 for (var i = 0; i < projects.length; i++){
+
   projects[i].onmouseout = function(e){
+    this.style.transition = "all 0.1s ease-in-out";
     lightsOff();
   }
 }

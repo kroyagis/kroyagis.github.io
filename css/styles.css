@@ -137,84 +137,9 @@ body{
   height: 100%;
 }
 
-.project{
-  background-size: 200% 100%;
-  display: inline;
-  position: absolute;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  letter-spacing: 0.1em;
-  line-height: 40px;
-}
-
-.project a{
-  display: inline-block;
-  padding: 0 20px;
-  height: 65px;
-}
-
-.soom{
-  color: #823DBF;
-  border-color: #823DBF;
-  background-image: linear-gradient(to right, white 50%, #823DBF 50%);
-  top: 45%;
-  left: 25%;
-  transition: all 0.1s ease-in-out;
-  transition: background-position 0.1s ease-in-out;
-}
-
-.soom:hover {
-  background-position: -100% 0;
-  color: white;
-}
-
-.newmedia{
-  color: #DD4FAB;
-  border-color: #DD4FAB;
-  background-image: linear-gradient(to right, white 50%, #DD4FAB 50%);
-  left: 10%;
-  top: 70%;
-  transition: all 0.1s ease-in-out;
-}
-
-.newmedia:hover{
-  background-position: -100% 0;
-  color: white;
-}
-
-.seatyourself{
-  color: #0F8D80;
-  border-color: #0F8D80;
-  background-image: linear-gradient(to right, white 50%, #0F8D80 50%);
-  top: 55%;
-  right: 20%;
-  transition: all 0.1s ease-in-out;
-}
-
-.seatyourself:hover{
-  background-position: -100% 0;
-  color: white;
-}
-.crowdfunder{
-  color: #3764C5;
-  border-color: #3764C5;
-  background-image: linear-gradient(to right, white 50%, #3764C5 50%);
-  top: 80%;
-  right: 10%;
-  transition: all 0.1s ease-in-out;
-}
-.crowdfunder:hover{
-  background-position: -100% 0;
-  color: white;
-}
-
 /***
 
-STYLING THE ROBOT
+STYLING THE AVATAR
 
 ***/
 
@@ -237,7 +162,6 @@ STYLING THE ROBOT
   background: #E9E9E9;
   border-top-left-radius: 38.4px;
   border-top-right-radius: 38.4px;
-  /*transition: all 0.1s ease-in-out;*/
 }
 
 .upperhead{
@@ -299,18 +223,18 @@ STYLING THE ROBOT
   height: 36.32px;
   border-radius: 50px;
   background: white;
-  /*transition: all 0.1s ease-in-out; */
-
 }
 
 .eyeleft{
   left: 4px;
   top: 4px;
 }
+
 .eyeright{
   left: 4px;
   top: 4px;
 }
+
 .pupils{
   position: absolute;
   top: 0;
@@ -352,4 +276,78 @@ STYLING THE ROBOT
 }
 .tooth2{
   left: 60.72px;
+}
+
+/*
+
+PROJECT LINKS
+
+*/
+
+.project{
+  background-size: 200% 100%;
+  display: inline;
+  position: absolute;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+}
+
+.project a{
+  display: inline-block;
+  padding: 0 20px;
+  height: 65px;
+}
+
+.soom{
+  color: #823DBF;
+  border-color: #823DBF;
+  top: 45%;
+  left: 25%;
+}
+
+.soom:hover {
+  background:#823DBF;
+  color: white;
+}
+
+.newmedia{
+  color: #DD4FAB;
+  border-color: #DD4FAB;
+  left: 10%;
+  top: 70%;
+}
+
+.newmedia:hover{
+  background: #DD4FAB;
+  color: white;
+}
+
+.seatyourself{
+  color: #0F8D80;
+  border-color: #0F8D80;
+  top: 55%;
+  right: 20%;
+}
+
+.seatyourself:hover{
+  background: #0F8D80;
+  color: white;
+}
+
+.crowdfunder{
+  color: #3764C5;
+  border-color: #3764C5;
+  top: 80%;
+  right: 10%;
+}
+
+.crowdfunder:hover{
+  background: #3764C5;
+  color: white;
 }
