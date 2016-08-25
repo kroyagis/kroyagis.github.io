@@ -371,6 +371,10 @@ PROJECT LINKS
   .container{
     margin: 40px 15px 0;
   }
+  .pupils{
+    left: 20%;
+    top: 5%;
+  }
 
   .project{
     margin-bottom: 15px;
@@ -392,6 +396,7 @@ PROJECT LINKS
     display: inline;
     position: absolute;
   }
+
 
   .crowdfunder{
     right: 5%;
