@@ -286,8 +286,6 @@ PROJECT LINKS
 
 .project{
   background-size: 200% 100%;
-  display: inline;
-  position: absolute;
   font-size: 1.6em;
   text-transform: uppercase;
   font-weight: bold;
@@ -307,8 +305,6 @@ PROJECT LINKS
 .soom{
   color: #823DBF;
   border-color: #823DBF;
-  top: 45%;
-  left: 25%;
 }
 
 .soom:hover {
@@ -319,8 +315,6 @@ PROJECT LINKS
 .newmedia{
   color: #DD4FAB;
   border-color: #DD4FAB;
-  left: 10%;
-  top: 70%;
 }
 
 .newmedia:hover{
@@ -331,8 +325,6 @@ PROJECT LINKS
 .seatyourself{
   color: #0F8D80;
   border-color: #0F8D80;
-  top: 55%;
-  right: 20%;
 }
 
 .seatyourself:hover{
@@ -343,11 +335,96 @@ PROJECT LINKS
 .crowdfunder{
   color: #3764C5;
   border-color: #3764C5;
-  top: 80%;
-  right: 10%;
 }
 
 .crowdfunder:hover{
   background: #3764C5;
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .crowdfunder{
+    right: 5%;
+    top: 70%;
+  }
+  .seatyourself{
+    right: 15%;
+    top: 50%;
+  }
+  .soom{
+    left: 20%;
+    top: 35%;
+  }
+  .newmedia{
+    left: 5%;
+    top: 70%;
+  }
+}
+
+@media (max-width: 660px)
+{
+  .container{
+    margin: 40px 15px 0;
+  }
+
+  .project{
+    margin-bottom: 15px;
+  }
+
+  .project a{
+    width: 100%;
+    line-height: 60px;
+  }
+
+  .project h5{
+    display: none;
+  }
+}
+
+@media (min-width: 661px){
+  .project{
+    display: inline;
+    position: absolute;
+  }
+
+  .crowdfunder{
+    right: 5%;
+    top: 70%;
+  }
+  .seatyourself{
+    right: 10%;
+    top: 50%;
+  }
+  .soom{
+    left: 20%;
+    top: 35%;
+  }
+  .newmedia{
+    left: 5%;
+    top: 70%;
+  }
+}
+
+@media (min-width: 900px)
+{
+  .seatyourself{
+    right: 18%;
+  }
+  .soom{
+    top: 40%;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .seatyourself{
+    right: 25%;
+    top: 45%;
+  }
+  .crowdfunder{
+    right: 10%;
+  }
+  .newmedia{
+    left: 10%;
+  }
 }
