@@ -32,6 +32,20 @@ function debounce(fn, delay) {
   };
 }
 
+
+//
+// windows.ev = false;
+//
+// document.getElementsByClassName("project").onmouseover = function () {
+//     window.ev = true;
+//     console.log(window.ev);
+// }
+//
+// document.getElementsByClassName("project").onmouseout = function () {
+//     window.ev = false;
+//     console.log(window.ev);
+// }
+
 function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top, e2Radius)
 {
   var faceObj = document.querySelector(faceClass),
@@ -99,40 +113,43 @@ function Xeyes(faceClass, e1Class, e1Lft, e1Top, e1Radius, e2Class, e2Lft, e2Top
   }, 250);
 
   var moveEyes = throttle(function(e){
-    var csrX, csrY,
-        x, y,
-        dx, dy,
-        R, d;
+    if (!mouseover){
+      var csrX, csrY,
+          x, y,
+          dx, dy,
+          R, d;
 
-    if (e.pageX)
-    {
-      csrX = e.pageX;
-      csrY = e.pageY;
+      if (e.pageX)
+      {
+        csrX = e.pageX;
+        csrY = e.pageY;
+      }
+      else
+      {
+        // IE case
+        d = (document.documentElement && document.documentElement.scrollLeft != null) ?
+               document.documentElement : document.body;
+        csrX = e.clientX + d.scrollLeft;
+        csrY = e.clientY + d.scrollTop;
+      }
+      // eye 1 first
+      dx = csrX - e1x;
+      dy = csrY - e1y;
+      R = Math.sqrt(dx*dx+dy*dy);     // distance from eye centre to csr
+      x = (R < r1)? dx : dx*r1/R;
+      y = (R < r1)? dy : dy*r1/R;
+      eye1Obj.style.left = x + e1xLoc + "px";
+      eye1Obj.style.top = y + e1yLoc + "px";
+      // now for eye 2
+      dx = csrX - e2x;
+      dy = csrY - e2y;
+      R = Math.sqrt(dx*dx+dy*dy);
+      x = (R < r2)? dx : dx*r2/R;
+      y = (R < r2)? dy : dy*r2/R;
+      eye2Obj.style.left = x + e2xLoc + "px";
+      eye2Obj.style.top = y + e2yLoc + "px";
     }
-    else
-    {
-      // IE case
-      d = (document.documentElement && document.documentElement.scrollLeft != null) ?
-             document.documentElement : document.body;
-      csrX = e.clientX + d.scrollLeft;
-      csrY = e.clientY + d.scrollTop;
-    }
-    // eye 1 first
-    dx = csrX - e1x;
-    dy = csrY - e1y;
-    R = Math.sqrt(dx*dx+dy*dy);     // distance from eye centre to csr
-    x = (R < r1)? dx : dx*r1/R;
-    y = (R < r1)? dy : dy*r1/R;
-    eye1Obj.style.left = x + e1xLoc + "px";
-    eye1Obj.style.top = y + e1yLoc + "px";
-    // now for eye 2
-    dx = csrX - e2x;
-    dy = csrY - e2y;
-    R = Math.sqrt(dx*dx+dy*dy);
-    x = (R < r2)? dx : dx*r2/R;
-    y = (R < r2)? dy : dy*r2/R;
-    eye2Obj.style.left = x + e2xLoc + "px";
-    eye2Obj.style.top = y + e2yLoc + "px";
+
   });
 
   eyesInit();

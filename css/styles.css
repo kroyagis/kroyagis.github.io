@@ -66,6 +66,7 @@ a
 STYLING THE NAV
 
 ***/
+
 header{
   height: 190px;
 }
@@ -93,6 +94,7 @@ header{
   padding: 2em 0;
   font-size: 1.067em;
 }
+
 .nav-list a{
   text-decoration: none;
   color: #4A4A4A;
@@ -132,10 +134,6 @@ body{
   overflow: hidden;
   height: auto;
 }
-.project-set{
-  position: relative;
-  height: 100%;
-}
 
 /***
 
@@ -155,6 +153,8 @@ STYLING THE AVATAR
 }
 
 .cap{
+  transition: all 0.1s ease-in-out;
+  box-shadow: none;
   margin: 0 auto;
   margin-bottom: 2px;
   width: 73.07px;
@@ -217,12 +217,17 @@ STYLING THE AVATAR
   left: 22px;
 }
 .eyes{
+  transition: all 0.1s ease-in-out;
   margin: 0;
   position: relative;
   width: 36.32px;
   height: 36.32px;
   border-radius: 50px;
   background: white;
+}
+.eyeon{
+  transition: none;
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #F3F315 , 0 0 70px #F3F315;
 }
 
 .eyeleft{
@@ -236,13 +241,22 @@ STYLING THE AVATAR
 }
 
 .pupils{
+  transition: all 0.1s ease-in-out;
+  display: block;
   position: absolute;
-  top: 0;
   width: 21.98px;
   height: 21.98px;
   border-radius: 50px;
   background: #7D99A6;
 }
+
+.pupiloff{
+  transition: none;
+  top: 15% !important;
+  left: 15% !important;
+  background: white;
+}
+
 
 .mouth{
   position: relative;
@@ -285,6 +299,7 @@ PROJECT LINKS
 */
 
 .project{
+  transition: all 0.1s ease-in-out;
   position: relative;
   z-index: 1;
   background-size: 200% 100%;
@@ -309,19 +324,9 @@ PROJECT LINKS
   border-color: #823DBF;
 }
 
-.soom:hover {
-  background:#823DBF;
-  color: white;
-}
-
 .newmedia{
   color: #DD4FAB;
   border-color: #DD4FAB;
-}
-
-.newmedia:hover{
-  background: #DD4FAB;
-  color: white;
 }
 
 .seatyourself{
@@ -329,17 +334,37 @@ PROJECT LINKS
   border-color: #0F8D80;
 }
 
-.seatyourself:hover{
-  background: #0F8D80;
-  color: white;
-}
-
 .crowdfunder{
   color: #3764C5;
   border-color: #3764C5;
 }
 
+/*
+
+HOVER EFFECTS
+
+*/
+
+.soom:hover {
+  transition: none;
+  background:#823DBF;
+  color: white;
+}
+
+.newmedia:hover{
+  transition: none;
+  background: #DD4FAB;
+  color: white;
+}
+
+.seatyourself:hover{
+  transition: none;
+  background: #0F8D80;
+  color: white;
+}
+
 .crowdfunder:hover{
+  transition: none;
   background: #3764C5;
   color: white;
 }
