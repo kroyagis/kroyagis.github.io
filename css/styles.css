@@ -164,6 +164,10 @@ STYLING THE AVATAR
   border-top-right-radius: 38.4px;
 }
 
+.capOn{
+  transition: none;
+}
+
 .upperhead{
   position: relative;
   margin: 0 auto;
@@ -225,7 +229,7 @@ STYLING THE AVATAR
   border-radius: 50px;
   background: white;
 }
-.eyeon{
+.eyeOn{
   transition: none;
   box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #F3F315 , 0 0 70px #F3F315;
 }
@@ -319,6 +323,10 @@ PROJECT LINKS
   height: 65px;
 }
 
+.project h5{
+  position: relative;
+  z-index: -1;
+}
 .soom{
   color: #823DBF;
   border-color: #823DBF;

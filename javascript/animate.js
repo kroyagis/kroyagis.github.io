@@ -18,25 +18,26 @@ var crowdfunder = document.querySelector(".crowdfunder");
 
 /* Cap light function */
 var capLightOn = function(e){
-  cap.style.transition = "";
-  cap.style.background = getComputedStyle(e).borderColor
+  cap.classList.toggle('capOn');
+  cap.style.background = getComputedStyle(e).borderColor;
 }
 
 /* Eye glows function */
 var eyeBeamOn = function(){
   for (var j = 0; j < eyes.length; j++){
     pupils[j].classList.toggle('pupiloff');
-    eyes[j].classList.toggle('eyeon');
+    eyes[j].classList.toggle('eyeOn');
   }
 }
 
 /* Back to default function */
 var lightsOff = function(){
   // cap.style.boxShadow = "";
+  cap.classList.toggle('capOn');
   cap.style.background = '#E9E9E9';
   for (var j = 0; j < eyes.length; j++){
     pupils[j].classList.toggle('pupiloff');
-    eyes[j].classList.toggle('eyeon');
+    eyes[j].classList.toggle('eyeOn');
   }
 }
 
